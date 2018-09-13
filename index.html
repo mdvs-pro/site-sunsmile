@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SunSmile</title>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/img/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/img/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/img/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/img/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/img/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/img/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="SunSmile"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="./assets/img/favicon/mstile-144x144.png" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  
+  <div class="body__wrapper">
+    <header class="header" itemscope="" itemtype="http://schema.org/Organization">
+  <div class="container">
+    <div class="row no-gutters justify-content-end align-items-center">
+      <a class="logo header__logo" itemprop="url" href="#logo">
+        <img src="./assets/img/logo.svg" alt="logo" itemprop="logo" class="logo__img">
+        <h1 class="logo__text">Сансмайлтур</h1>
+      </a>
+      <!-- Menu -->
+      <nav class="menu" role="navigation">
+        <ul class="menu__list cl-effect-5">
+          <li class="menu__item">
+            <a href="#about" class="menu__link">
+              <span data-hover="Курорты">Курорты</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#offers" class="menu__link">
+              <span data-hover="Отзывы">Отзывы</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#news" class="menu__link">
+              <span data-hover="Контакты">Контакты</span>
+            </a>
+          </li>
+        </ul>
+        <div class="menu__adaptive">
+          <span>...</span>
+          <ul class="dropdown">
+          </ul>
+        </div>
+      </nav>
+      <!-- Burger button -->
+      <div id="menu-icon-wrapper" class="menu-icon-wrapper header__burger modal-trigger" style="visibility: hidden; display: none;" data-modal="#menu-sm">
+        <svg width="1000px" height="1000px">
+          <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+          <path id="pathB" d="M 300 500 L 700 500"></path>
+          <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+        </svg>
+        <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+      </div>
+      <!-- Etc -->
+      <div class="header__phone row no-gutters align-items-center">
+        <div class="column sm-hidden">
+          <a href="tel:+380682816858">+38 (068) 281-68-58</a>
+          <a href="tel:+380502816858">+38 (050) 281-68-58</a>
+          <a class="header__mail" href="mailto:info@sunsmile.com.ua">info@sunsmile.com.ua</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="welcome">
+  <div class="container container--full-h">
+    <div class="row pos-r">
+      <div class="welcome__text-part">
+        <div class="welcome__texts">
+          <p class="welcome__preheading">загадочные</p>
+          <p class="welcome__heading">Карпаты</p>
+          <div class="welcome__content pos-r">
+            <ul class="welcome__list">
+              <li>Активный и оздоровительный отдых</li>
+              <li>Широкий выбор услуг</li>
+              <li>от 5000 грн</li>
+            </ul>
+          </div>
+          <img class="welcome__object" src="./assets/img/icons/mountain.svg" alt="Карпатские горы">
+        </div>
+      </div>
+      <div class="col-md-9 offset-md-3 pos-r">
+        <a href="#" class="btn welcome__btn">Узнать больше</a>
+        <div class="welcome__images">
+          <div class="welcome__img">
+            <img src="./assets/img/karpaty.png" alt="Карпаты">
+          </div>
+        </div>
+      </div>
+      <div class="welcome__nav" id="welcome-nav">
+        <!-- <div class="welcome__counter">
+          <span data-counter="current">1</span>
+          <span>/</span>
+          <span data-counter="all">3</span>
+        </div> -->
+        <button class="btn btn--prev" data-direction="prev">
+          <i class="fas fa-angle-left"></i>
+        </button>
+        <button class="btn btn--next" data-direction="next">
+          <i class="fas fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="sc" id="steps">
+  <div class="container">
+    <p class="sc__heading">Как всё происходит</p>
+    <div class="row">
+      <div class="col-md-3 d-flex">
+        <span class="steps__icon">
+          <img class="steps__img" src="./assets/img/icons/step-callback.svg" alt="steps callback">
+        </span>
+        <p class="steps__text">Мы максимально уточняем все
+          ваши ожидания от отдыха</p>
+      </div>
+      <div class="col-md-3 d-flex">
+        <span class="steps__icon">
+          <img class="steps__img" src="./assets/img/icons/step-price.svg" alt="steps price">
+        </span>
+        <p class="steps__text">Детально подбираем вариант
+          и просчитываем затраты</p>
+      </div>
+      <div class="col-md-3 d-flex">
+        <span class="steps__icon">
+          <img class="steps__img" src="./assets/img/icons/step-case.svg" alt="steps case">
+        </span>
+        <p class="steps__text">Желаем вам приятной поездки
+          и ждём от Вас восхищенных отзывов</p>
+      </div>
+      <div class="col-md-3 d-flex flex-column">
+        <!-- <p class="steps__text strong">Не стоит ждать! Закажите звонок!</p> -->
+        <button class="btn steps__btn js-modal" data-modal="callback">Позвоните мне</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="sc" id="about">
+  <div class="container">
+    <div class="pos-r">
+      <p class="sc__heading">Дорогие друзья,</p>
+      <p class="about__text">на нашем сайте Вы можете узнать не только где, но и как приятно и с пользой провести свой отпуск. Чтобы предстоящий отдых удался, его нужно как следует спланировать. Именно этим занимаемся мы, туроператор по Украине «Сансмайлтур».
+        Спросите себя, чего Вы желаете? Возможно, Вы просто хотите сменить обстановку и поправить свое здоровье, а может Вам нравится активный отдых или экстрим? В любом случае, Вы обратились по адресу.
+        <br>
+        <br>
+        Мы команда профессионалов, которая любит свою работу и делает всё возможное, чтоб клиент остался доволен. Сотрудники компании «Сансмайлтур» подберут для Вас самый оптимальный вариант отдыха исключительно по Вашим запросам и потребностям.
+        <br>
+        <br>
+        Мы ценим и любим каждого клиента – убедитесь в этом сами!</p>
+      <img class="about__img" src="./assets/img/logo.svg" alt="logo" itemprop="logo">
+    </div>
+  </div>
+</div>
+    <div class="sc" id="callback">
+  <div class="container">
+    <div class="callback__box text-center">
+      <p class="sc__heading">Готовы к незабываемому отдыху ?</p>
+      <p class="callback__text">Сотрудники компании «Сансмайлтур» готовы подобрать для Вас самый оптимальный вариант отдыха
+        исключительно по Вашим запросам и потребностям.</p>
+      <p class="callback__text strong">Подскажите, как нам лучше связаться с вами ?</p>
+      <div class="d-flex align-items-center justify-content-center">
+        <button class="btn js-modal" data-modal="callback">Перезвоните мне</button>
+        <span class="callback__btn-divider">или</span>
+        <button class="btn js-modal" data-modal="mail">Напишите мне</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="hidden-md-down col-md-2">
+        <a class="logo" itemprop="url" href="#logo">
+        <img src="./assets/img/logo.svg" alt="logo" itemprop="logo" class="logo__img">
+      </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <p class="footer__heading">Страницы</p>
+        <ul class="footer__menu">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Все Курорты
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Контакты
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Карта сайта
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <p class="footer__heading">Курорты</p>
+        <ul class="footer__menu">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Одесса
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Карпаты
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Закарпатье
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Трускавец
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- TAGS
+      <div class="col-6 col-md-3">
+        <a class="footer__tag" href="#">оздоровительный</a>
+        <a class="footer__tag" href="#">морской</a>
+        <a class="footer__tag" href="#">SPA</a>
+        <a class="footer__tag" href="#">горы</a>
+        <a class="footer__tag" href="#">морской</a>
+        <a class="footer__tag" href="#">оздоровительный</a>
+        <a class="footer__tag" href="#">SPA</a>
+        <a class="footer__tag" href="#">горы</a>
+      </div> -->
+      <div class="footer__contacts col-md-4">
+        <p class="footer__heading">Как с нами связаться ?</p>
+        <div class="row no-gutters align-items-center">
+        <div class="column sm-hidden">
+          <a href="tel:+380682816858">+38 (068) 281-68-58</a>
+          <a href="tel:+380502816858">+38 (050) 281-68-58</a>
+          <a class="header__mail" href="mailto:info@sunsmile.com.ua">info@sunsmile.com.ua</a>
+          <div class="footer__social d-flex align-items-center">
+            Мы в сетях: &nbsp;&nbsp;
+            <a href="https://www.facebook.com/sunsmile.com.ua/" rel="nofollow" target="_blank" class="facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="266.893px" height="266.895px" viewBox="0 0 266.893 266.895" enable-background="new 0 0 266.893 266.895"
+                  xml:space="preserve">
+              <path id="Blue_1_" fill="#3C5A99" d="M248.082,262.307c7.854,0,14.223-6.369,14.223-14.225V18.812
+                c0-7.857-6.368-14.224-14.223-14.224H18.812c-7.857,0-14.224,6.367-14.224,14.224v229.27c0,7.855,6.366,14.225,14.224,14.225
+                H248.082z"/>
+              <path id="f" fill="#FFFFFF" d="M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935
+                l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585
+                v99.803H182.409z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/sunsmiletour/" rel="nofollow" target="_blank" class="instagram">
+              <svg width="256px" height="256px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                <path fill="#fff" d="M127.999746,23.06353 C162.177385,23.06353 166.225393,23.1936027 179.722476,23.8094161 C192.20235,24.3789926 198.979853,26.4642218 203.490736,28.2166477 C209.464938,30.5386501 213.729395,33.3128586 218.208268,37.7917319 C222.687141,42.2706052 225.46135,46.5350617 227.782844,52.5092638 C229.535778,57.0201472 231.621007,63.7976504 232.190584,76.277016 C232.806397,89.7746075 232.93647,93.8226147 232.93647,128.000254 C232.93647,162.177893 232.806397,166.225901 232.190584,179.722984 C231.621007,192.202858 229.535778,198.980361 227.782844,203.491244 C225.46135,209.465446 222.687141,213.729903 218.208268,218.208776 C213.729395,222.687649 209.464938,225.461858 203.490736,227.783352 C198.979853,229.536286 192.20235,231.621516 179.722476,232.191092 C166.227425,232.806905 162.179418,232.936978 127.999746,232.936978 C93.8200742,232.936978 89.772067,232.806905 76.277016,232.191092 C63.7971424,231.621516 57.0196391,229.536286 52.5092638,227.783352 C46.5345536,225.461858 42.2700971,222.687649 37.7912238,218.208776 C33.3123505,213.729903 30.538142,209.465446 28.2166477,203.491244 C26.4637138,198.980361 24.3784845,192.202858 23.808908,179.723492 C23.1930946,166.225901 23.0630219,162.177893 23.0630219,128.000254 C23.0630219,93.8226147 23.1930946,89.7746075 23.808908,76.2775241 C24.3784845,63.7976504 26.4637138,57.0201472 28.2166477,52.5092638 C30.538142,46.5350617 33.3123505,42.2706052 37.7912238,37.7917319 C42.2700971,33.3128586 46.5345536,30.5386501 52.5092638,28.2166477 C57.0196391,26.4642218 63.7971424,24.3789926 76.2765079,23.8094161 C89.7740994,23.1936027 93.8221066,23.06353 127.999746,23.06353 M127.999746,0 C93.2367791,0 88.8783247,0.147348072 75.2257637,0.770274749 C61.601148,1.39218523 52.2968794,3.55566141 44.1546281,6.72008828 C35.7374966,9.99121548 28.5992446,14.3679613 21.4833489,21.483857 C14.3674532,28.5997527 9.99070739,35.7380046 6.71958019,44.1551362 C3.55515331,52.2973875 1.39167714,61.6016561 0.769766653,75.2262718 C0.146839975,88.8783247 0,93.2372872 0,128.000254 C0,162.763221 0.146839975,167.122183 0.769766653,180.774236 C1.39167714,194.398852 3.55515331,203.703121 6.71958019,211.845372 C9.99070739,220.261995 14.3674532,227.400755 21.4833489,234.516651 C28.5992446,241.632547 35.7374966,246.009293 44.1546281,249.28042 C52.2968794,252.444847 61.601148,254.608323 75.2257637,255.230233 C88.8783247,255.85316 93.2367791,256 127.999746,256 C162.762713,256 167.121675,255.85316 180.773728,255.230233 C194.398344,254.608323 203.702613,252.444847 211.844864,249.28042 C220.261995,246.009293 227.400247,241.632547 234.516143,234.516651 C241.632039,227.400755 246.008785,220.262503 249.279912,211.845372 C252.444339,203.703121 254.607815,194.398852 255.229725,180.774236 C255.852652,167.122183 256,162.763221 256,128.000254 C256,93.2372872 255.852652,88.8783247 255.229725,75.2262718 C254.607815,61.6016561 252.444339,52.2973875 249.279912,44.1551362 C246.008785,35.7380046 241.632039,28.5997527 234.516143,21.483857 C227.400247,14.3679613 220.261995,9.99121548 211.844864,6.72008828 C203.702613,3.55566141 194.398344,1.39218523 180.773728,0.770274749 C167.121675,0.147348072 162.762713,0 127.999746,0 Z M127.999746,62.2703115 C91.698262,62.2703115 62.2698034,91.69877 62.2698034,128.000254 C62.2698034,164.301738 91.698262,193.730197 127.999746,193.730197 C164.30123,193.730197 193.729689,164.301738 193.729689,128.000254 C193.729689,91.69877 164.30123,62.2703115 127.999746,62.2703115 Z M127.999746,170.667175 C104.435741,170.667175 85.3328252,151.564259 85.3328252,128.000254 C85.3328252,104.436249 104.435741,85.3333333 127.999746,85.3333333 C151.563751,85.3333333 170.666667,104.436249 170.666667,128.000254 C170.666667,151.564259 151.563751,170.667175 127.999746,170.667175 Z M211.686338,59.6734287 C211.686338,68.1566129 204.809755,75.0337031 196.326571,75.0337031 C187.843387,75.0337031 180.966297,68.1566129 180.966297,59.6734287 C180.966297,51.1902445 187.843387,44.3136624 196.326571,44.3136624 C204.809755,44.3136624 211.686338,51.1902445 211.686338,59.6734287 Z" fill="#0A0A08"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copyright">
+    <div class="text-center">
+      <p class="copyright__text">&copy;1990 - 2018 ВСЕ ПРАВА ЗАЩИЩЕНЫ Sunsmile.com.ua</p>
+    </div>
+  </div>
+</footer>
+  </div>
+
+
+  
+  <!-- <div class="overlay">
+  <div class="overlay__reveal"></div>
+  <div class="overlay__item" id="preview-about">
+    <div class="row">
+      <div class="col-md-4 col-lg-3">
+        <img class="box__img box__img--original" src="./assets/img/about.jpg" alt="Founder" />
+      </div>
+      <div class="col-md-8 col-lg-9">
+        <div class="overlay__content">
+          <p>Нажаль, боржники, незважаючи на отримання численних листів та повідомлень як безпосередньо від Фонду, так і від фінансових
+          компаній та бірж, які проводять торги, в більшості випадків не користуються унікальною можливістю викупити власні боргові
+          зобов’язання та назавжди позбутись фінансового тиску.</p>
+
+          <p>В подальшому, такі лоти об’єднуються Фондом в так звані «пули» і виставляються на торги, проте їх покупцями стають вже не
+          самі позичальники, а професійні гравці на ринку банківських боргів - фінансові та колекторські компанії.</p>
+
+          <p>Саме вони стають новими кредиторами за Вашими борговими зобов’язаннями й отримують право та можливість стягувати з Вас всю
+          суму заборгованості за кредитом, як за рахунок належної Вам заставної нерухомості, так і за рахунок будь-якого іншого майна
+          чи коштів, що є в Вашій особистій чи спільній власності.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay__item" id="about_offer_1">
+    <div class="row">
+      <div class="col-12">
+        <div class="overlay__content">
+          <p class="c__p">Агентство забезпечує повний юридичний супровід викупу фізичними особами-боржниками за
+            іпотечними кредитами власних боргів у банків, що знаходяться в стадії ліквідації,
+            зокрема:</p>
+            <ul class="c__list">
+              <li>Надамо Вам інформацію щодо стану Вашої заборгованості та підготовки лоту до торгів;</li>
+              <li>Запропонуємо стратегію дій під час торгів з урахуванням Вашого конкретного випадку та фінансових можливостей;</li>
+              <li>Підготуємо та оформимо всі необхідні документи для участі Вашого представника в аукціоні (Позичальник не має право особисто укладати договори про викуп власних зобов’язань у банку, що ліквідується,);</li>
+              <li>Приймемо участь в торгах через аукціонні майданчики-партнери;</li>
+              <li>Забезпечимо юридичний супровід укладання договорів відступлення (купівлі-продажу) прав вимоги за кредитним договором та переходу прав за іпотечним договором;</li>
+              <li>Надамо консультацію щодо уникнення можливих податкових наслідків укладання зазначених угод.</li>
+            </ul>
+          <p class="c__p">Дана послуга діє по всій України, незалежно від місця знаходження заставного майна та банку – банкрута. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay__item" id="about_offer_2">
+    <div class="row">
+      <div class="col-12">
+        <div class="overlay__content">
+          <p class="c__p">В багатьох випадках майнові права за кредитним договором вже викуплені недружньою фінансовою компанією, яка спеціалізується
+            на придбані боргових зобов’язань фізичних осіб.</p>
+
+          <p class="c__p">Незважаючи на дію мораторію на стягнення нерухомого житлового майна, що виступає забезпеченням за кредитами громадян України,
+            такі компанії здійснюють стягнення іпотечних об’єктів без звернення до суду, на підставі статті 37 Закону України «Про
+            іпотеку».</p>
+
+          <p class="c__p">Як наслідок, Ваше майно буде стягнуто в рахунок погашення боргу, протягом тридцяти календарних днів з моменту отримання відповідного
+            повідомлення. Борг за кредитним договором залишиться непогашеним, оскільки, в більшості випадків, вартість нерухомості
+            на даний час є значно меншою за суму загальної заборгованості по кредиту. В подальшому, непогашена частина боргу буде стягуватись
+            фінансовою компанією у судовому порядку, і у випадку не розрахунку Вас буде внесено до Єдиного реєстру боржників, що призведе
+            до обмеження цивільних прав.</p>
+
+          <p class="c__p">Ми пропонуємо Вам фахову підтримку та можливість вирішити усі юридичні та фінансові спори з кредиторами саме у позасудовому
+            порядку, шляхом мирного врегулювання (правової медіації).</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay__item" id="menu-sm">
+    <div class="overlay__content">
+      <ul class="menu__list cl-effect-5">
+        <li class="menu__item">
+          <a href="#about" class="menu__link">
+            <span data-hover="Про нас">Про нас</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#offers" class="menu__link">
+            <span data-hover="Наші послуги">Наші послуги</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#news" class="menu__link">
+            <span data-hover="Новини">Новини</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#testimonials" class="menu__link">
+            <span data-hover="Відгуки">Відгуки</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#partners" class="menu__link">
+            <span data-hover="Партнери">Партнери</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#faq" class="menu__link">
+            <span data-hover="FAQ">FAQ</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#contacts" class="menu__link">
+            <span data-hover="Контакти">Контакти</span>
+          </a>
+        </li>
+      </ul>
+      <div class="overlay__phones">
+        <div class="column sm-visible">
+          <a href="tel:+380442840797">+38 044 284 07 97</a>
+          <a href="tel:+380993909999">+38 099 390 99 99</a>
+        </div>
+        <div class="socials sm-visible">
+          <img class="socials__item" src="./assets/img/h/wat.png" alt="whatsup">
+          <img class="socials__item" src="./assets/img/h/viber.png" alt="viber">
+          <img class="socials__item" src="./assets/img/h/t.png" alt="telegram">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay__item" id="news_item_1">
+    <div class="row">
+      <div class="col-12">
+        <div class="overlay__content">
+          <p class="c__p">Агентство забезпечує повний юридичний супровід викупу фізичними особами-боржниками за
+            іпотечними кредитами власних боргів у банків, що знаходяться в стадії ліквідації,
+            зокрема:</p>
+            <ul class="c__list">
+              <li>Надамо Вам інформацію щодо стану Вашої заборгованості та підготовки лоту до торгів;</li>
+              <li>Запропонуємо стратегію дій під час торгів з урахуванням Вашого конкретного випадку та фінансових можливостей;</li>
+              <li>Підготуємо та оформимо всі необхідні документи для участі Вашого представника в аукціоні (Позичальник не має право особисто укладати договори про викуп власних зобов’язань у банку, що ліквідується,);</li>
+              <li>Приймемо участь в торгах через аукціонні майданчики-партнери;</li>
+              <li>Забезпечимо юридичний супровід укладання договорів відступлення (купівлі-продажу) прав вимоги за кредитним договором та переходу прав за іпотечним договором;</li>
+              <li>Надамо консультацію щодо уникнення можливих податкових наслідків укладання зазначених угод.</li>
+            </ul>
+          <p class="c__p">Дана послуга діє по всій України, незалежно від місця знаходження заставного майна та банку – банкрута. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay__item" id="news_item_2">
+    <div class="row">
+      <div class="col-12">
+        <div class="overlay__content">
+          <p class="c__p">В багатьох випадках майнові права за кредитним договором вже викуплені недружньою фінансовою компанією, яка спеціалізується
+            на придбані боргових зобов’язань фізичних осіб.</p>
+
+          <p class="c__p">Незважаючи на дію мораторію на стягнення нерухомого житлового майна, що виступає забезпеченням за кредитами громадян України,
+            такі компанії здійснюють стягнення іпотечних об’єктів без звернення до суду, на підставі статті 37 Закону України «Про
+            іпотеку».</p>
+
+          <p class="c__p">Як наслідок, Ваше майно буде стягнуто в рахунок погашення боргу, протягом тридцяти календарних днів з моменту отримання відповідного
+            повідомлення. Борг за кредитним договором залишиться непогашеним, оскільки, в більшості випадків, вартість нерухомості
+            на даний час є значно меншою за суму загальної заборгованості по кредиту. В подальшому, непогашена частина боргу буде стягуватись
+            фінансовою компанією у судовому порядку, і у випадку не розрахунку Вас буде внесено до Єдиного реєстру боржників, що призведе
+            до обмеження цивільних прав.</p>
+
+          <p class="c__p">Ми пропонуємо Вам фахову підтримку та можливість вирішити усі юридичні та фінансові спори з кредиторами саме у позасудовому
+            порядку, шляхом мирного врегулювання (правової медіації).</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay__item" id="news_item_3">
+    <div class="row">
+      <div class="col-12">
+        <div class="overlay__content">
+          <p class="c__p">В багатьох випадках майнові права за кредитним договором вже викуплені недружньою фінансовою компанією, яка спеціалізується
+            на придбані боргових зобов’язань фізичних осіб.</p>
+
+          <p class="c__p">Незважаючи на дію мораторію на стягнення нерухомого житлового майна, що виступає забезпеченням за кредитами громадян України,
+            такі компанії здійснюють стягнення іпотечних об’єктів без звернення до суду, на підставі статті 37 Закону України «Про
+            іпотеку».</p>
+
+          <p class="c__p">Як наслідок, Ваше майно буде стягнуто в рахунок погашення боргу, протягом тридцяти календарних днів з моменту отримання відповідного
+            повідомлення. Борг за кредитним договором залишиться непогашеним, оскільки, в більшості випадків, вартість нерухомості
+            на даний час є значно меншою за суму загальної заборгованості по кредиту. В подальшому, непогашена частина боргу буде стягуватись
+            фінансовою компанією у судовому порядку, і у випадку не розрахунку Вас буде внесено до Єдиного реєстру боржників, що призведе
+            до обмеження цивільних прав.</p>
+
+          <p class="c__p">Ми пропонуємо Вам фахову підтримку та можливість вирішити усі юридичні та фінансові спори з кредиторами саме у позасудовому
+            порядку, шляхом мирного врегулювання (правової медіації).</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay__item" id="news_item_4">
+    <div class="row">
+      <div class="col-12">
+        <div class="overlay__content">
+          <p class="c__p">В багатьох випадках майнові права за кредитним договором вже викуплені недружньою фінансовою компанією, яка спеціалізується
+            на придбані боргових зобов’язань фізичних осіб.</p>
+
+          <p class="c__p">Незважаючи на дію мораторію на стягнення нерухомого житлового майна, що виступає забезпеченням за кредитами громадян України,
+            такі компанії здійснюють стягнення іпотечних об’єктів без звернення до суду, на підставі статті 37 Закону України «Про
+            іпотеку».</p>
+
+          <p class="c__p">Як наслідок, Ваше майно буде стягнуто в рахунок погашення боргу, протягом тридцяти календарних днів з моменту отримання відповідного
+            повідомлення. Борг за кредитним договором залишиться непогашеним, оскільки, в більшості випадків, вартість нерухомості
+            на даний час є значно меншою за суму загальної заборгованості по кредиту. В подальшому, непогашена частина боргу буде стягуватись
+            фінансовою компанією у судовому порядку, і у випадку не розрахунку Вас буде внесено до Єдиного реєстру боржників, що призведе
+            до обмеження цивільних прав.</p>
+
+          <p class="c__p">Ми пропонуємо Вам фахову підтримку та можливість вирішити усі юридичні та фінансові спори з кредиторами саме у позасудовому
+            порядку, шляхом мирного врегулювання (правової медіації).</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay__header">
+    <a class="logo header__logo" itemprop="url" href="#logo">
+      <img src="./assets/img/logo.svg" alt="logo" itemprop="logo" class="header__logo-img">
+    </a>
+    <div class="overlay__buttons">
+      <button class="btn btn--bordered overlay__close" type="button">
+        Назад ...
+        <span class="btn__arrow icons">
+          <svg class="icons__arrow" viewBox="0 0 29.87 59.92">
+            <path fill="#fff"  stroke-miterlimit="10" stroke-width="4px" class="cls-1" d="M2.8,4A1.67,1.67,0,0,1,5.74,2.88L28.27,29.27a1.67,1.67,0,0,1,0,2.17L5.73,57.63A1.67,1.67,0,1,1,3.2,55.45l21.6-25.1L3.2,5A1.66,1.66,0,0,1,2.8,4Z" transform="translate(-0.8 -0.29)"/>
+          </svg>
+          <svg class="icons__circle" viewBox="0 0 157.67 157.68">
+            <path fill="#fff" d="M106.18,117.44a47.29,47.29,0,0,1-54.69,0L29,139.94a78.85,78.85,0,0,0,99.67,0Z"/>
+            <path fill="#fff" d="M139.93,29,117.43,51.5a47.29,47.29,0,0,1-.09,54.81l22.48,22.48A78.86,78.86,0,0,0,139.93,29Z"/>
+            <path fill="#fff" d="M51.37,40.33a47.3,47.3,0,0,1,54.93,0l22.48-22.48a78.84,78.84,0,0,0-99.9,0Z"/>
+            <path fill="#fff" d="M40.33,106.31a47.41,47.41,0,0,1-.09-54.8L17.74,29a78.86,78.86,0,0,0,.1,99.79Z"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div> -->
+
+  <!-- <script src="//maps.googleapis.com/maps/api/js"></script> -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!-- <script src="./assets/libs/TweenMax.min.js"></script> -->
+  <!-- <script src="./assets/libs/maps_index.js"></script> -->
+  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+  <script src="./assets/libs/jquery.ba-throttle-debounce.min.js"></script>
+  <script src="./assets/libs/ease.min.js"></script>
+  <script src="./assets/libs/segment.min.js"></script>
+  <!-- slick -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
+  <script src="./assets/scripts/vendor.js"></script>
+</body>
+</html>

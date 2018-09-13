@@ -1,0 +1,34 @@
+/*!
+ * -------------------------------------
+Theme Name: aspik
+Theme URI: aspik.com.ua
+Author: ufuture
+Description: Corporative site for Aspik
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: aspik
+ * -------------------------------------
+ */
+
+
+// Base Style
+@import "base/_mixin";
+// @import "base/_fonts";
+@import "base/_variables";
+@import "base/_extend";
+@import "base/_reset";
+@import "base/_bootstrap-grid"; // bootstrap v4 grid
+
+
+//	Style
+@import "general";
+@import "slick";
+@import "link_effect";
+@import "header";
+@import "welcome";
+@import "steps";
+@import "about";
+@import "callback";
+@import "footer";
+// @import "modal"

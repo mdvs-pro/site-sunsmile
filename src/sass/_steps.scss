@@ -1,0 +1,22 @@
+.steps {
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    flex: 0 0 3.5rem;
+    height: 3.5rem;
+    background: $secondary_color;
+    border-radius: 50%;
+  }
+  &__text {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3rem;
+    transform: translate(20%,20%);
+  }
+}

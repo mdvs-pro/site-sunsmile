@@ -1,0 +1,11 @@
+.callback {
+
+  &__box {
+    padding: 6rem 4rem;
+    border: 3px solid $primary_color;
+  }
+  &__btn-divider {
+    font-family: $heading_font;
+    padding: 0 2rem;
+  }
+}

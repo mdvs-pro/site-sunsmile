@@ -1,0 +1,14 @@
+.about {
+
+  &__text {
+    margin-right: 32rem;
+    padding-right: 4rem;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32rem;
+    opacity: 0.3;
+  }
+}

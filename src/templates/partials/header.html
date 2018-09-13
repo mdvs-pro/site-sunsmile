@@ -1,0 +1,52 @@
+<header class="header" itemscope="" itemtype="http://schema.org/Organization">
+  <div class="container">
+    <div class="row no-gutters justify-content-end align-items-center">
+      <a class="logo header__logo" itemprop="url" href="#logo">
+        <img src="./assets/img/logo.svg" alt="logo" itemprop="logo" class="logo__img">
+        <h1 class="logo__text">Сансмайлтур</h1>
+      </a>
+      <!-- Menu -->
+      <nav class="menu" role="navigation">
+        <ul class="menu__list cl-effect-5">
+          <li class="menu__item">
+            <a href="#about" class="menu__link">
+              <span data-hover="Курорты">Курорты</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#offers" class="menu__link">
+              <span data-hover="Отзывы">Отзывы</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#news" class="menu__link">
+              <span data-hover="Контакты">Контакты</span>
+            </a>
+          </li>
+        </ul>
+        <div class="menu__adaptive">
+          <span>...</span>
+          <ul class="dropdown">
+          </ul>
+        </div>
+      </nav>
+      <!-- Burger button -->
+      <div id="menu-icon-wrapper" class="menu-icon-wrapper header__burger modal-trigger" style="visibility: hidden; display: none;" data-modal="#menu-sm">
+        <svg width="1000px" height="1000px">
+          <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+          <path id="pathB" d="M 300 500 L 700 500"></path>
+          <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+        </svg>
+        <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+      </div>
+      <!-- Etc -->
+      <div class="header__phone row no-gutters align-items-center">
+        <div class="column sm-hidden">
+          <a href="tel:+380682816858">+38 (068) 281-68-58</a>
+          <a href="tel:+380502816858">+38 (050) 281-68-58</a>
+          <a class="header__mail" href="mailto:info@sunsmile.com.ua">info@sunsmile.com.ua</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

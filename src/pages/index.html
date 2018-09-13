@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="body__wrapper">
+    {% include "partials/header.html" %}
+    {% include "partials/welcome.html" %}
+    {% include "partials/_steps.html" %}
+    {% include "partials/about.html" %}
+    {% include "partials/_callback.html" %}
+    {% include "partials/footer.html" %}
+  </div>
+{% endblock %}
+
+{% block modal %}
+  <!-- {% include "partials/index-modal.html" %} -->
+{% endblock %}
